@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,15 +7,115 @@
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="350dp"
-        android:layout_height="150dp"
-        tools:layout_editor_absoluteX="261dp"
-        tools:layout_editor_absoluteY="316dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/color_website_card"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12sp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/photo_profile"
+                app:civ_border_color="@color/design_default_color_on_secondary"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/dev_name"
+                android:textColor="@color/black"
+                android:layout_marginTop="7dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:text="@string/profession"
+                android:textSize="18dp"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="16sp">
+
+            <TextView
+                android:id="@+id/getInTouch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/get_in_touch"
+                android:textColor="@color/gray"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_toRightOf="@+id/getInTouch"
+                android:background="#80CBC4"
+                android:drawableBottom="@android:drawable/ic_menu_call"
+                android:text="Button" />
+        </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
 
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cardView2"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tableLayoutId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_page_tab"
+            android:orientation="vertical" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
 </RelativeLayout>
+
+
+
+

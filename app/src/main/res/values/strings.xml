@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PortfolioDanielaRamirezG</string>
+    <string name="dev_name">Daniela Ramirez Gomez</string>
+    <string name="profession">Android Developer</string>
+    <string name="get_in_touch">Get in touch!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
