@@ -4,6 +4,7 @@ import android.graphics.Color
 import android.graphics.Color.GRAY
 import android.graphics.Color.parseColor
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.dany.portfoliodanielaramirezg.controller.DevPagerAdapter
 import com.google.android.material.tabs.TabLayout
@@ -22,6 +23,11 @@ class MainActivity : AppCompatActivity() {
 
         // To change the color of the tabs when they are clicked.
         tableLayoutId.setTabTextColors(Color.parseColor("black"),Color.parseColor("white"))
+
+        buttonContact.setOnClickListener{
+            Toast.makeText(this, "Contact button", Toast.LENGTH_SHORT).show()
+        }
+
 
     }
 }
