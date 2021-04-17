@@ -10,9 +10,9 @@ This is an app that shows my portfolio, using fragments
 
 ## Demo
 
-![Image - Demo](Demo-1.jgep)
-![Image - Demo](Demo-2.jgep)
-![Image - Demo](Demo-3.jgep)
+![Image - Demo](Demo-1.jpeg)
+![Image - Demo](Demo-2.jpeg)
+![Image - Demo](Demo-3.jpeg)
 
 
 ## Author
