@@ -1,8 +1,10 @@
 package com.dany.portfoliodanielaramirezg
 
+import android.graphics.Color
+import android.graphics.Color.GRAY
+import android.graphics.Color.parseColor
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-//import android.support.design.widget.TabLayout;
 import com.dany.portfoliodanielaramirezg.controller.DevPagerAdapter
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_main.*
@@ -16,13 +18,10 @@ class MainActivity : AppCompatActivity() {
         viewPager.adapter = DevPagerAdapter(supportFragmentManager)
 
         // Setup the tab-Layout
-
         tableLayoutId.setupWithViewPager(viewPager)
-//
-//        tabLayout = findViewById<TabLayout>(R.id.tableLayoutId);
-//        tabLayout.setupWithViewPager(viewpager)
-//        tableLayoutId.setUpWithViewPager(viewPager)
-//
-//        tableLayoutId.setTabTextColors(color.GRAY, color.paseColor("white"))
+
+        // To change the color of the tabs when they are clicked.
+        tableLayoutId.setTabTextColors(Color.parseColor("black"),Color.parseColor("white"))
+
     }
 }

@@ -3,6 +3,15 @@
     <string name="dev_name">Daniela Ramirez Gomez</string>
     <string name="profession">Android Developer</string>
     <string name="get_in_touch">Get in touch!</string>
+    <string name="about_me">Software Engineer With knowledge in JavaScript, Python programming, unittest, SQL, HTML, and CSS. Currently learning Java programming.
+Public Accountant with experience in costs, inventories and taxes.
+ </string>
+    <string name="Hobbies">* Passionate about the technology "\n" * learn new things "\n"
+    * Traveling "\n" * Theater "\n"</string>
+    <string name="skills">* Kotlin "\n"  * Python "\n" * Android "\n
+        * unittest "\n" * SQL "\n" * HTML "\n" * CSS "\n"</string>
+    <string name="contact"/>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
